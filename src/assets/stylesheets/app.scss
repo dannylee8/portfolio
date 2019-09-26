@@ -13,13 +13,34 @@ body {
 }
 .nav-links {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding-right: 5%;
   padding-left: 0;
 
+  .nav-icons {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 16px;
+  }
+
+  .links {
+    display: flex;
+    font-family: 'Poiret One', cursive;
+    width: 50%;
+    padding: 16px auto; 
+    justify-content: flex-end;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.5em;
+    }
+  }
+
   li {
-    display: inline-block;
     margin-left: 5%;
+    list-style-type: none;
   }
 }
 
@@ -33,10 +54,9 @@ body {
 
 .name-title {
   font-family: 'Poiret One', cursive;
-  margin-top: 1.3em;
+  padding-top: 1.3em;
   font-size: 5.5em;
   line-height: 110%;
-  margin: 2.1rem 0 1.68rem 0;
   font-weight: 400;
   color: floralwhite;
 }
@@ -54,7 +74,7 @@ body {
 
 
 .hero-container {
-  height: calc(100vh - 34px);
+  height: calc(100vh - 60px);
 
   &.intro-page {
     text-align: center;

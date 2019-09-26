@@ -1,14 +1,12 @@
 import React from 'react';
 import './assets/stylesheets/app.scss';
-import tree from '../src/assets/images/tree-city.jpg'
+import tree from '../src/assets/images/tree-city.png'
 import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="app-container">
-      <div className="navbar-Container">
-        <Navbar/>
-      </div>
+      <Navbar/>
       <div className="hero-container intro-page">
         <h1 className="name-title">Vera Protopopova</h1>
         <h5 className="roles">
@@ -24,7 +22,7 @@ function App() {
         </div>
       </div>
 
-      <div className="section title-section">
+      <div className="section title-section" id="about">
         <h2 className="section-header">Background</h2>
       </div>
 
@@ -48,7 +46,7 @@ function App() {
         </div>
       </div>
 
-      <div className="section title-section">
+      <div className="section title-section" id="experience">
         <h2 className="section-header">Experience</h2>
       </div>
       <div className="parallax-container">

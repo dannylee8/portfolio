@@ -12,6 +12,14 @@ body {
   margin: 0;
 }
 
+.app-container {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 .nav-links {
   display: flex;
   justify-content: space-between;
@@ -83,6 +91,7 @@ body {
 }
 
 .parallax {
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
@@ -91,10 +100,7 @@ body {
   z-index: -1;
 
   .parallax-image {
-    transform: translate3d(-50%, 0px, 0px);
-    position: absolute;
-    left: 50%;
-    bottom: 0;
+    transform: translateZ(-1px) scale(2);
     min-width: 100%;
     min-height: 100%;
   }

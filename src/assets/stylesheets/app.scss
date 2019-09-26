@@ -43,6 +43,10 @@
 .hero-container {
   height: 100vh;
 
+  &.intro-page {
+    text-align: center;
+  }
+
   .parallax {
     position: absolute;
     top: 0;

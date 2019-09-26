@@ -42,6 +42,9 @@ function App() {
       <div className="section title-section">
         <h2 className="section-header">Projects</h2>
       </div>
+      <div className="section title-section">
+        <h2 className="section-header">Experience</h2>
+      </div>
     </div>
   );
 }

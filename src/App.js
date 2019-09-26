@@ -1,6 +1,7 @@
 import React from 'react';
 import './assets/stylesheets/app.scss';
 import tree from '../src/assets/images/tree-city.png'
+import profile from '../src/assets/images/profile.jpg'
 import Navbar from './components/Navbar';
 
 function App() {
@@ -42,7 +43,9 @@ function App() {
               </ul>
             </p> */}
           </div>
-          <div className="profile-image"></div>
+          <div className="profile-image">
+            <img src={profile} alt=""/>
+          </div>
         </div>
       </div>
 

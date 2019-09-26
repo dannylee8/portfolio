@@ -1,33 +1,121 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-links {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  justify-content: flex-end;
+  padding-right: 5%;
+  padding-left: 0;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  li {
+    display: inline-block;
+    margin-left: 5%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+
+.fixed-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.name-title {
+  font-family: 'Poiret One', cursive;
+  margin-top: 1.3em;
+  font-size: 5.5em;
+  line-height: 110%;
+  margin: 2.1rem 0 1.68rem 0;
+  font-weight: 400;
+}
+
+.roles {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.separator {
+  margin: 0px 10px;
+}
+
+
+.hero-container {
+  height: 100vh;
+
+  .parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+    .parallax-image {
+      transform: translate3d(-50%, 0px, 0px);
+    }
+  }
+}
+
+.title-section {
+  height: 5em;
+  text-align: left;
+}
+
+.section-header {
+  font-family: 'Titillium Web', sans-serif;
+  text-align: left;
+  font-size: 3.56rem;
+  line-height: 110%;
+  margin: 1.78rem 0 1.424rem 0;
+  font-weight: 400;
+}
+
+section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.row-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.about-section {
+  .about-container {
+    height: auto;
+    padding-top: 4em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    max-width: 1280px;
+
+    .profile-history {
+      margin-right: 20px;
+      max-width: 600px;
+
+      p {
+        text-align: left;
+        font-family: 'Slabo 27px', serif;
+        font-size: 18px;
+      }
+    }
+
+    .profile-image {
+      // height: 100%;
+      margin-left: 40px;
+      box-sizing: border-box;
+      width: 200px;
+      height: 200px;
+      background-color: #81b7ea;
+      border-radius: 100%;
+    }
   }
 }

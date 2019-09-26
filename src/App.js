@@ -1,6 +1,6 @@
 import React from 'react';
 import './assets/stylesheets/app.scss';
-
+import tree from '../src/assets/images/tree-city.jpg'
 import Navbar from './components/Navbar';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         </h5>
 
         <div className="parallax">
-          <img className="parallax-image" src="" alt=""/>
+          <img className="parallax-image" src={tree} alt=""/>
         </div>
       </div>
 
@@ -31,9 +31,10 @@ function App() {
       <div className="about-section">
         <div className="about-container row-container">
           <div className="profile-history">
-            <p>Having replaced Times New Roman as the default Microsoft Word font, Calibri is an excellent option for a safe, universally readable sans-serif font. Davis described the typeface as his "font of choice" when working with clients. Professional resume writer Donna Svei, also a strong advocate of Calibri, noted in her blog how smoothly it renders on computer screens.</p>
-            <br/>
-            <p>This serif font is another Microsoft Word staple. Created back in 2004, this typeface was designed to work well for "on-screen reading and to look good when printed at small sizes." Christian Eilers, a resume expert at Zety, said the font was a great choice for resumes and cover letters, even if it's often considered one of the more "traditional" options.</p>
+            <p>
+            Full stack web developer with  a mission to leave the world a better place than I found it. Currently employed at Flatiron School as an Software Engineering Coach. I have taught over 100 people how to create web apps with Ruby, Rails, SQL, JavaScript, React and Redux, and given self-made lectures on essential skills like Git, CSS, pair-programming and problem solving. I'm always looking for new ways to grow my skills as a software engineer and work with brilliant, dedicated people to create something amazing.
+            </p>
+            <p>I love building things. I find hard engineering problems intrinsically fun to tackle, and love facing new challenges.</p>
           </div>
           <div className="profile-image"></div>
         </div>
@@ -44,6 +45,34 @@ function App() {
       </div>
       <div className="section title-section">
         <h2 className="section-header">Experience</h2>
+      </div>
+      <div className="parallax-container">
+        <div className="inner-container">
+          <table>
+            <tbody>
+              <tr>
+                <td>Front End</td>
+                <td>Back End</td>
+                <td>Back End</td>
+              </tr>
+              <tr>
+                <td>React + Redux</td>
+                <td>NodeJS</td>
+                <td>Back End</td>
+              </tr>
+              <tr>
+                <td>Angular</td>
+                <td>Rails</td>
+                <td>Back End</td>
+              </tr>
+              <tr>
+                <td>HTML + CSS</td>
+                <td>Sinatra</td>
+                <td>Back End</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );

@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
 
+$charcoal: #373737;
+$paper: #F4F4F4;
+$lavender: #6D7993; 
+$grape: #94618E;
+$eggplant: #49274A; 
+$lemon: #DCB239;
+$forest: #015249;
+
+body {
+  margin: 0;
+}
 .nav-links {
   display: flex;
   justify-content: flex-end;
@@ -27,12 +38,14 @@
   line-height: 110%;
   margin: 2.1rem 0 1.68rem 0;
   font-weight: 400;
+  color: floralwhite;
 }
 
 .roles {
   font-family: 'Titillium Web', sans-serif;
   font-size: 1em;
   font-weight: 400;
+  color: floralwhite;
 }
 
 .separator {
@@ -41,7 +54,7 @@
 
 
 .hero-container {
-  height: 100vh;
+  height: calc(100vh - 34px);
 
   &.intro-page {
     text-align: center;
@@ -57,13 +70,19 @@
 
     .parallax-image {
       transform: translate3d(-50%, 0px, 0px);
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
     }
   }
 }
 
 .title-section {
-  height: 5em;
   text-align: left;
+  background-color: $eggplant;
+  overflow: auto;
 }
 
 .section-header {
@@ -71,7 +90,7 @@
   text-align: left;
   font-size: 3.56rem;
   line-height: 110%;
-  margin: 1.78rem 0 1.424rem 0;
+  margin: 1.5rem 0;
   font-weight: 400;
 }
 
@@ -88,6 +107,7 @@ section {
 }
 
 .about-section {
+  background-color: $paper;
   .about-container {
     height: auto;
     padding-top: 4em;

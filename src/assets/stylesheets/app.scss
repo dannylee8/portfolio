@@ -59,23 +59,23 @@ body {
   &.intro-page {
     text-align: center;
   }
+}
 
-  .parallax {
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+  .parallax-image {
+    transform: translate3d(-50%, 0px, 0px);
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    left: 50%;
     bottom: 0;
-    z-index: -1;
-
-    .parallax-image {
-      transform: translate3d(-50%, 0px, 0px);
-      position: absolute;
-      left: 50%;
-      bottom: 0;
-      min-width: 100%;
-      min-height: 100%;
-    }
+    min-width: 100%;
+    min-height: 100%;
   }
 }
 
@@ -83,6 +83,15 @@ body {
   text-align: left;
   background-color: $eggplant;
   overflow: auto;
+}
+
+.parallax-container {
+  height: 500px;
+  position: relative;
+
+  .inner-container {
+    padding-top: 4em;
+  }
 }
 
 .section-header {
@@ -110,7 +119,7 @@ section {
   background-color: $paper;
   .about-container {
     height: auto;
-    padding-top: 4em;
+    padding: 4em 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -140,6 +149,31 @@ section {
       height: 200px;
       background-color: #81b7ea;
       border-radius: 100%;
+    }
+  }
+}
+
+table {
+  margin: 0 auto;
+
+  tr {
+    th {
+      font-family: 'Poiret One', cursive;
+      color: rgb(255,215,0);
+      font-size: 1.8em;
+      padding: 15px 5px;
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      border-radius: 2px;
+    }
+
+    td {
+      font-family: 'Titillium Web', sans-serif;
+      padding: 0;
+      width: 33%;
+      text-align: center;
+      font-size: 1.5em;
     }
   }
 }

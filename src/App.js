@@ -34,15 +34,20 @@ function App() {
             <p>
             Full stack web developer with  a mission to leave the world a better place than I found it. Currently employed at Flatiron School as an Software Engineering Coach. I have taught over 100 people how to create web apps with Ruby, Rails, SQL, JavaScript, React and Redux, and given self-made lectures on essential skills like Git, CSS, pair-programming and problem solving. I'm always looking for new ways to grow my skills as a software engineer and work with brilliant, dedicated people to create something amazing.
             </p>
-            <p>I love building things. I find hard engineering problems intrinsically fun to tackle, and love facing new challenges.</p>
+            {/* <p>I love building things. I find hard engineering problems intrinsically fun to tackle, and love facing new challenges.</p> */}
+            <br/>
+            {/* <p>My personal interests include: 
+              <ul>
+                <li>art</li>
+                <li>math</li>
+                <li>something else</li>
+              </ul>
+            </p> */}
           </div>
           <div className="profile-image"></div>
         </div>
       </div>
 
-      <div className="section title-section">
-        <h2 className="section-header">Projects</h2>
-      </div>
       <div className="section title-section">
         <h2 className="section-header">Experience</h2>
       </div>
@@ -51,27 +56,50 @@ function App() {
           <table>
             <tbody>
               <tr>
-                <td>Front End</td>
-                <td>Back End</td>
-                <td>Back End</td>
+                <th>Front End</th>
+                <th>Back End</th>
+                <th>Other</th>
+              </tr>
+              <tr>
+                <td>Javascript</td>
+                <td>NodeJS</td>
+                <td>Jira</td>
               </tr>
               <tr>
                 <td>React + Redux</td>
-                <td>NodeJS</td>
-                <td>Back End</td>
+                <td>Express</td>
+                <td>Confluence</td>
               </tr>
               <tr>
                 <td>Angular</td>
-                <td>Rails</td>
-                <td>Back End</td>
+                <td>Ruby</td>
+                <td>Git</td>
               </tr>
               <tr>
-                <td>HTML + CSS</td>
+                <td>HTML</td>
+                <td>Rails</td>
+                <td>Github</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
                 <td>Sinatra</td>
-                <td>Back End</td>
+                <td>AWS</td>
+              </tr>
+              <tr>
+                <td>SCSS</td>
+                <td>MongoDB</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Flexbox/Grid</td>
+                <td>PostgreSQL</td>
+                <td></td>
               </tr>
             </tbody>
           </table>
+        </div>
+        <div className="parallax">
+          <img className="parallax-image" src={tree} alt=""/>
         </div>
       </div>
     </div>

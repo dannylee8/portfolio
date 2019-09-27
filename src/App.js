@@ -36,13 +36,6 @@ function App() {
               </p>
               {/* <p>I love building things. I find hard engineering problems intrinsically fun to tackle, and love facing new challenges.</p> */}
               <br/>
-              {/* <p>My personal interests include: 
-                <ul>
-                  <li>art</li>
-                  <li>math</li>
-                  <li>something else</li>
-                </ul>
-              </p> */}
             </div>
             <div className="profile-image">
               <img src={profile} alt=""/>

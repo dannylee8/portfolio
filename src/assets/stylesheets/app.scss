@@ -38,7 +38,7 @@ body {
     display: flex;
     font-family: 'Poiret One', cursive;
     width: 50%;
-    padding: 16px auto; 
+    padding: 16px 50px 16px 16px; 
     justify-content: flex-end;
 
     a {
@@ -130,6 +130,7 @@ body {
   line-height: 110%;
   margin: 1.5rem 0;
   font-weight: 400;
+  padding-left: 120px;
 }
 
 section {
@@ -204,6 +205,7 @@ table {
       width: 33%;
       text-align: center;
       font-size: 1.5em;
+      color: #F4F4F4
     }
   }
 }
